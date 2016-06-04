@@ -1,0 +1,1257 @@
+
+--app-start--
+processing DoorOpenWarningLight.txt.groovy
+--app-start--
+processing 43Thermostat.txt.groovy
+--app-start--
+processing 43Thermostat.txt.groovy
+--app-start--
+processing 43Thermostat.txt.groovy
+--app-start--
+processing 43Thermostat.txt.groovy
+req caps: [capability.thermostat]
+req cap size: 1
+requested commands:[cool, fanon, off, auto, setthermostatfanmode, setcoolingsetpoint, fancirculate, heat, setheatingsetpoint, setthermostatmode, emergencyheat, fanauto]
+requested attrs:[thermostatfanmode, coolingsetpoint, thermostatsetpoint, heatingsetpoint, thermostatmode, thermostatoperatingstate, temperature]
+called cap-methods by app
+setheatingsetpoint
+called cap-props by app
+thermostatmode
+attribute uses through subscriptions
+thermostat
+tempsetpoint21
+tempsetpoint11
+tempsetpoint1
+tempsetpoint31
+tempsetpoint3
+tempsetpoint41
+tempsetpoint2
+tempsetpoint4
+cmd overpriv:[cool, off, fanon, auto, setcoolingsetpoint, setthermostatfanmode, heat, fancirculate, emergencyheat, setthermostatmode, fanauto]
+attr overpriv:[thermostatfanmode, thermostatsetpoint, coolingsetpoint, thermostatoperatingstate, heatingsetpoint, temperature]
+^^^^^^^^-OVERPRIVILEGED-^^^^^^^
+--app-start--
+processing 43Thermostat.txt.groovy
+req caps: [capability.thermostat]
+req cap size: 1
+requested commands:[cool, fanon, off, auto, setthermostatfanmode, setcoolingsetpoint, fancirculate, heat, setheatingsetpoint, setthermostatmode, emergencyheat, fanauto]
+requested attrs:[thermostatfanmode, coolingsetpoint, thermostatsetpoint, heatingsetpoint, thermostatmode, thermostatoperatingstate, temperature]
+called cap-methods by app
+setheatingsetpoint
+called cap-props by app
+thermostatmode
+attribute uses through subscriptions
+thermostat
+tempsetpoint21
+tempsetpoint11
+tempsetpoint1
+tempsetpoint31
+tempsetpoint3
+tempsetpoint41
+tempsetpoint2
+tempsetpoint4
+cmd overpriv:[cool, off, fanon, auto, setcoolingsetpoint, setthermostatfanmode, heat, fancirculate, emergencyheat, setthermostatmode, fanauto]
+attr overpriv:[thermostatfanmode, thermostatsetpoint, coolingsetpoint, thermostatoperatingstate, heatingsetpoint, temperature]
+^^^^^^^^-OVERPRIVILEGED-^^^^^^^
+summary
+cmd overpriv:1
+attr overpriv:1
+num reflection:0
+total:1
+type2 overprivilege total:0
+samename_flags:0
+type2 cmd/attr uses:0
+numSendSms: 0
+numOAuth: 0
+numInternet: 0
+--app-start--
+processing 43Thermostat.txt.groovy
+req caps: [capability.thermostat]
+req cap size: 1
+requested commands:[cool, fanon, off, auto, setthermostatfanmode, setcoolingsetpoint, fancirculate, heat, setheatingsetpoint, setthermostatmode, emergencyheat, fanauto]
+requested attrs:[thermostatfanmode, coolingsetpoint, thermostatsetpoint, heatingsetpoint, thermostatmode, thermostatoperatingstate, temperature]
+called cap-methods by app
+setheatingsetpoint
+called cap-props by app
+thermostatmode
+attribute uses through subscriptions
+thermostat
+tempsetpoint21
+tempsetpoint11
+tempsetpoint1
+tempsetpoint31
+tempsetpoint3
+tempsetpoint41
+tempsetpoint2
+tempsetpoint4
+cmd overpriv:[cool, off, fanon, auto, setcoolingsetpoint, setthermostatfanmode, heat, fancirculate, emergencyheat, setthermostatmode, fanauto]
+attr overpriv:[thermostatfanmode, thermostatsetpoint, coolingsetpoint, thermostatoperatingstate, heatingsetpoint, temperature]
+^^^^^^^^-OVERPRIVILEGED-^^^^^^^
+summary
+cmd overpriv:1
+attr overpriv:1
+num reflection:0
+total:1
+type2 overprivilege total:0
+samename_flags:0
+type2 cmd/attr uses:0
+numSendSms: 0
+numOAuth: 0
+numInternet: 0
+--app-start--
+processing 43Thermostat.txt.groovy
+req caps: [capability.thermostat]
+req cap size: 1
+requested commands:[cool, fanon, off, auto, setthermostatfanmode, setcoolingsetpoint, fancirculate, heat, setheatingsetpoint, setthermostatmode, emergencyheat, fanauto]
+requested attrs:[thermostatfanmode, coolingsetpoint, thermostatsetpoint, heatingsetpoint, thermostatmode, thermostatoperatingstate, temperature]
+called cap-methods by app
+setheatingsetpoint
+called cap-props by app
+thermostatmode
+attribute uses through subscriptions
+thermostat
+tempsetpoint21
+tempsetpoint11
+tempsetpoint1
+tempsetpoint31
+tempsetpoint3
+tempsetpoint41
+tempsetpoint2
+tempsetpoint4
+cmd overpriv:[cool, off, fanon, auto, setcoolingsetpoint, setthermostatfanmode, heat, fancirculate, emergencyheat, setthermostatmode, fanauto]
+attr overpriv:[thermostatfanmode, thermostatsetpoint, coolingsetpoint, thermostatoperatingstate, heatingsetpoint, temperature]
+^^^^^^^^-OVERPRIVILEGED-^^^^^^^
+summary
+cmd overpriv:1
+attr overpriv:1
+num reflection:0
+total:1
+type2 overprivilege total:0
+samename_flags:0
+type2 cmd/attr uses:0
+numSendSms: 0
+numOAuth: 0
+numInternet: 0
+--app-start--
+processing 43Thermostat.txt.groovy
+req caps: [capability.thermostat]
+req cap size: 1
+requested commands:[cool, fanon, off, auto, setthermostatfanmode, setcoolingsetpoint, fancirculate, heat, setheatingsetpoint, setthermostatmode, emergencyheat, fanauto]
+requested attrs:[thermostatfanmode, coolingsetpoint, thermostatsetpoint, heatingsetpoint, thermostatmode, thermostatoperatingstate, temperature]
+called cap-methods by app
+setheatingsetpoint
+called cap-props by app
+thermostatmode
+attribute uses through subscriptions
+thermostat
+tempsetpoint21
+tempsetpoint11
+tempsetpoint1
+tempsetpoint31
+tempsetpoint3
+tempsetpoint41
+tempsetpoint2
+tempsetpoint4
+cmd overpriv:[cool, off, fanon, auto, setcoolingsetpoint, setthermostatfanmode, heat, fancirculate, emergencyheat, setthermostatmode, fanauto]
+attr overpriv:[thermostatfanmode, thermostatsetpoint, coolingsetpoint, thermostatoperatingstate, heatingsetpoint, temperature]
+^^^^^^^^-OVERPRIVILEGED-^^^^^^^
+summary
+cmd overpriv:1
+attr overpriv:1
+num reflection:0
+total:1
+type2 overprivilege total:0
+samename_flags:0
+type2 cmd/attr uses:0
+numSendSms: 0
+numOAuth: 0
+numInternet: 0
+--app-start--
+processing 43Thermostat.txt.groovy
+req caps: [capability.thermostat]
+req cap size: 1
+requested commands:[cool, fanon, off, auto, setthermostatfanmode, setcoolingsetpoint, fancirculate, heat, setheatingsetpoint, setthermostatmode, emergencyheat, fanauto]
+requested attrs:[thermostatfanmode, coolingsetpoint, thermostatsetpoint, heatingsetpoint, thermostatmode, thermostatoperatingstate, temperature]
+called cap-methods by app
+setheatingsetpoint
+called cap-props by app
+thermostatmode
+attribute uses through subscriptions
+thermostat
+tempsetpoint21
+tempsetpoint11
+tempsetpoint1
+tempsetpoint31
+tempsetpoint3
+tempsetpoint41
+tempsetpoint2
+tempsetpoint4
+cmd overpriv:[cool, off, fanon, auto, setcoolingsetpoint, setthermostatfanmode, heat, fancirculate, emergencyheat, setthermostatmode, fanauto]
+attr overpriv:[thermostatfanmode, thermostatsetpoint, coolingsetpoint, thermostatoperatingstate, heatingsetpoint, temperature]
+^^^^^^^^-OVERPRIVILEGED-^^^^^^^
+summary
+cmd overpriv:1
+attr overpriv:1
+num reflection:0
+total:1
+type2 overprivilege total:0
+samename_flags:0
+type2 cmd/attr uses:0
+numSendSms: 0
+numOAuth: 0
+numInternet: 0
+--app-start--
+processing 43Thermostat.txt.groovy
+req caps: [capability.thermostat]
+req cap size: 1
+requested commands:[cool, fanon, off, auto, setthermostatfanmode, setcoolingsetpoint, fancirculate, heat, setheatingsetpoint, setthermostatmode, emergencyheat, fanauto]
+requested attrs:[thermostatfanmode, coolingsetpoint, thermostatsetpoint, heatingsetpoint, thermostatmode, thermostatoperatingstate, temperature]
+called cap-methods by app
+setheatingsetpoint
+called cap-props by app
+thermostatmode
+attribute uses through subscriptions
+thermostat
+tempsetpoint21
+tempsetpoint11
+tempsetpoint1
+tempsetpoint31
+tempsetpoint3
+tempsetpoint41
+tempsetpoint2
+tempsetpoint4
+cmd overpriv:[cool, off, fanon, auto, setcoolingsetpoint, setthermostatfanmode, heat, fancirculate, emergencyheat, setthermostatmode, fanauto]
+attr overpriv:[thermostatfanmode, thermostatsetpoint, coolingsetpoint, thermostatoperatingstate, heatingsetpoint, temperature]
+^^^^^^^^-OVERPRIVILEGED-^^^^^^^
+summary
+cmd overpriv:1
+attr overpriv:1
+num reflection:0
+total:1
+type2 overprivilege total:0
+samename_flags:0
+type2 cmd/attr uses:0
+numSendSms: 0
+numOAuth: 0
+numInternet: 0
+--app-start--
+processing 43Thermostat.txt.groovy
+req caps: [capability.thermostat]
+req cap size: 1
+requested commands:[cool, fanon, off, auto, setthermostatfanmode, setcoolingsetpoint, fancirculate, heat, setheatingsetpoint, setthermostatmode, emergencyheat, fanauto]
+requested attrs:[thermostatfanmode, coolingsetpoint, thermostatsetpoint, heatingsetpoint, thermostatmode, thermostatoperatingstate, temperature]
+called cap-methods by app
+setheatingsetpoint
+called cap-props by app
+thermostatmode
+attribute uses through subscriptions
+thermostat
+tempsetpoint21
+tempsetpoint11
+tempsetpoint1
+tempsetpoint31
+tempsetpoint3
+tempsetpoint41
+tempsetpoint2
+tempsetpoint4
+cmd overpriv:[cool, off, fanon, auto, setcoolingsetpoint, setthermostatfanmode, heat, fancirculate, emergencyheat, setthermostatmode, fanauto]
+attr overpriv:[thermostatfanmode, thermostatsetpoint, coolingsetpoint, thermostatoperatingstate, heatingsetpoint, temperature]
+^^^^^^^^-OVERPRIVILEGED-^^^^^^^
+summary
+cmd overpriv:1
+attr overpriv:1
+num reflection:0
+total:1
+type2 overprivilege total:0
+samename_flags:0
+type2 cmd/attr uses:0
+numSendSms: 0
+numOAuth: 0
+numInternet: 0
+--app-start--
+processing 43Thermostat.txt.groovy
+summary
+cmd overpriv:0
+attr overpriv:0
+num reflection:0
+total:0
+type2 overprivilege total:0
+samename_flags:0
+type2 cmd/attr uses:0
+numSendSms: 0
+numOAuth: 0
+numInternet: 0
+--app-start--
+processing 43Thermostat.txt.groovy
+summary
+cmd overpriv:0
+attr overpriv:0
+num reflection:0
+total:0
+type2 overprivilege total:0
+samename_flags:0
+type2 cmd/attr uses:0
+numSendSms: 0
+numOAuth: 0
+numInternet: 0
+--app-start--
+processing 43Thermostat.txt.groovy
+summary
+cmd overpriv:0
+attr overpriv:0
+num reflection:0
+total:0
+type2 overprivilege total:0
+samename_flags:0
+type2 cmd/attr uses:0
+numSendSms: 0
+numOAuth: 0
+numInternet: 0
+--app-start--
+processing 43Thermostat.txt.groovy
+summary
+cmd overpriv:0
+attr overpriv:0
+num reflection:0
+total:0
+type2 overprivilege total:0
+samename_flags:0
+type2 cmd/attr uses:0
+numSendSms: 0
+numOAuth: 0
+numInternet: 0
+--app-start--
+processing 43Thermostat.txt.groovy
+summary
+cmd overpriv:0
+attr overpriv:0
+num reflection:0
+total:0
+type2 overprivilege total:0
+samename_flags:0
+type2 cmd/attr uses:0
+numSendSms: 0
+numOAuth: 0
+numInternet: 0
+--app-start--
+processing 43Thermostat.txt.groovy
+summary
+cmd overpriv:0
+attr overpriv:0
+num reflection:0
+total:0
+type2 overprivilege total:0
+samename_flags:0
+type2 cmd/attr uses:0
+numSendSms: 0
+numOAuth: 0
+numInternet: 0
+--app-start--
+processing 43Thermostat.txt.groovy
+--app-start--
+processing 43Thermostat.txt.groovy
+summary
+cmd overpriv:0
+attr overpriv:0
+num reflection:0
+total:0
+type2 overprivilege total:0
+samename_flags:0
+type2 cmd/attr uses:0
+numSendSms: 0
+numOAuth: 0
+numInternet: 0
+--app-start--
+processing 43Thermostat.txt.groovy
+summary
+cmd overpriv:0
+attr overpriv:0
+num reflection:0
+total:0
+type2 overprivilege total:0
+samename_flags:0
+type2 cmd/attr uses:0
+numSendSms: 0
+numOAuth: 0
+numInternet: 0
+--app-start--
+processing 43Thermostat.txt.groovy
+--app-start--
+processing 43Thermostat.txt.groovy
+summary
+cmd overpriv:0
+attr overpriv:0
+num reflection:0
+total:0
+type2 overprivilege total:0
+samename_flags:0
+type2 cmd/attr uses:0
+numSendSms: 0
+numOAuth: 0
+numInternet: 0
+--app-start--
+processing 43Thermostat.txt.groovy
+summary
+cmd overpriv:0
+attr overpriv:0
+num reflection:0
+total:0
+type2 overprivilege total:0
+samename_flags:0
+type2 cmd/attr uses:0
+numSendSms: 0
+numOAuth: 0
+numInternet: 0
+--app-start--
+processing 43Thermostat.txt.groovy
+summary
+cmd overpriv:0
+attr overpriv:0
+num reflection:0
+total:0
+type2 overprivilege total:0
+samename_flags:0
+type2 cmd/attr uses:0
+numSendSms: 0
+numOAuth: 0
+numInternet: 0
+--app-start--
+processing 43Thermostat.txt.groovy
+summary
+cmd overpriv:0
+attr overpriv:0
+num reflection:0
+total:0
+type2 overprivilege total:0
+samename_flags:0
+type2 cmd/attr uses:0
+numSendSms: 0
+numOAuth: 0
+numInternet: 0
+--app-start--
+processing 43Thermostat.txt.groovy
+summary
+cmd overpriv:0
+attr overpriv:0
+num reflection:0
+total:0
+type2 overprivilege total:0
+samename_flags:0
+type2 cmd/attr uses:0
+numSendSms: 0
+numOAuth: 0
+numInternet: 0
+--app-start--
+processing 43Thermostat.txt.groovy
+--app-start--
+processing 43Thermostat.txt.groovy
+summary
+cmd overpriv:0
+attr overpriv:0
+num reflection:0
+total:0
+type2 overprivilege total:0
+samename_flags:0
+type2 cmd/attr uses:0
+numSendSms: 0
+numOAuth: 0
+numInternet: 0
+--app-start--
+processing 43Thermostat.txt.groovy
+summary
+cmd overpriv:0
+attr overpriv:0
+num reflection:0
+total:0
+type2 overprivilege total:0
+samename_flags:0
+type2 cmd/attr uses:0
+numSendSms: 0
+numOAuth: 0
+numInternet: 0
+--app-start--
+processing 43Thermostat.txt.groovy
+summary
+cmd overpriv:0
+attr overpriv:0
+num reflection:0
+total:0
+type2 overprivilege total:0
+samename_flags:0
+type2 cmd/attr uses:0
+numSendSms: 0
+numOAuth: 0
+numInternet: 0
+--app-start--
+processing 43Thermostat.txt.groovy
+summary
+cmd overpriv:0
+attr overpriv:0
+num reflection:0
+total:0
+type2 overprivilege total:0
+samename_flags:0
+type2 cmd/attr uses:0
+numSendSms: 0
+numOAuth: 0
+numInternet: 0
+--app-start--
+processing 43Thermostat.txt.groovy
+summary
+cmd overpriv:0
+attr overpriv:0
+num reflection:0
+total:0
+type2 overprivilege total:0
+samename_flags:0
+type2 cmd/attr uses:0
+numSendSms: 0
+numOAuth: 0
+numInternet: 0
+--app-start--
+processing 43Thermostat.txt.groovy
+--app-start--
+processing 43Thermostat.txt.groovy
+--app-start--
+processing 43Thermostat.txt.groovy
+summary
+cmd overpriv:0
+attr overpriv:0
+num reflection:0
+total:0
+type2 overprivilege total:0
+samename_flags:0
+type2 cmd/attr uses:0
+numSendSms: 0
+numOAuth: 0
+numInternet: 0
+--app-start--
+processing 43Thermostat.txt.groovy
+summary
+cmd overpriv:0
+attr overpriv:0
+num reflection:0
+total:0
+type2 overprivilege total:0
+samename_flags:0
+type2 cmd/attr uses:0
+numSendSms: 0
+numOAuth: 0
+numInternet: 0
+--app-start--
+processing 43Thermostat.txt.groovy
+summary
+cmd overpriv:0
+attr overpriv:0
+num reflection:0
+total:0
+type2 overprivilege total:0
+samename_flags:0
+type2 cmd/attr uses:0
+numSendSms: 0
+numOAuth: 0
+numInternet: 0
+--app-start--
+processing 43Thermostat.txt.groovy
+summary
+cmd overpriv:0
+attr overpriv:0
+num reflection:0
+total:0
+type2 overprivilege total:0
+samename_flags:0
+type2 cmd/attr uses:0
+numSendSms: 0
+numOAuth: 0
+numInternet: 0
+--app-start--
+processing 43Thermostat.txt.groovy
+--app-start--
+processing 43Thermostat.txt.groovy
+--app-start--
+processing 43Thermostat.txt.groovy
+summary
+cmd overpriv:0
+attr overpriv:0
+num reflection:0
+total:0
+type2 overprivilege total:0
+samename_flags:0
+type2 cmd/attr uses:0
+numSendSms: 0
+numOAuth: 0
+numInternet: 0
+--app-start--
+processing 43Thermostat.txt.groovy
+--app-start--
+processing 43Thermostat.txt.groovy
+summary
+cmd overpriv:0
+attr overpriv:0
+num reflection:0
+total:0
+type2 overprivilege total:0
+samename_flags:0
+type2 cmd/attr uses:0
+numSendSms: 0
+numOAuth: 0
+numInternet: 0
+--app-start--
+processing 43Thermostat.txt.groovy
+summary
+cmd overpriv:0
+attr overpriv:0
+num reflection:0
+total:0
+type2 overprivilege total:0
+samename_flags:0
+type2 cmd/attr uses:0
+numSendSms: 0
+numOAuth: 0
+numInternet: 0
+--app-start--
+processing 43Thermostat.txt.groovy
+summary
+cmd overpriv:0
+attr overpriv:0
+num reflection:0
+total:0
+type2 overprivilege total:0
+samename_flags:0
+type2 cmd/attr uses:0
+numSendSms: 0
+numOAuth: 0
+numInternet: 0
+--app-start--
+processing 43Thermostat.txt.groovy
+summary
+cmd overpriv:0
+attr overpriv:0
+num reflection:0
+total:0
+type2 overprivilege total:0
+samename_flags:0
+type2 cmd/attr uses:0
+numSendSms: 0
+numOAuth: 0
+numInternet: 0
+--app-start--
+processing 43Thermostat.txt.groovy
+summary
+cmd overpriv:0
+attr overpriv:0
+num reflection:0
+total:0
+type2 overprivilege total:0
+samename_flags:0
+type2 cmd/attr uses:0
+numSendSms: 0
+numOAuth: 0
+numInternet: 0
+--app-start--
+processing 43Thermostat.txt.groovy
+summary
+cmd overpriv:0
+attr overpriv:0
+num reflection:0
+total:0
+type2 overprivilege total:0
+samename_flags:0
+type2 cmd/attr uses:0
+numSendSms: 0
+numOAuth: 0
+numInternet: 0
+--app-start--
+processing 43Thermostat.txt.groovy
+summary
+cmd overpriv:0
+attr overpriv:0
+num reflection:0
+total:0
+type2 overprivilege total:0
+samename_flags:0
+type2 cmd/attr uses:0
+numSendSms: 0
+numOAuth: 0
+numInternet: 0
+--app-start--
+processing 43Thermostat.txt.groovy
+--app-start--
+processing 43Thermostat.txt.groovy
+--app-start--
+processing 43Thermostat.txt.groovy
+--app-start--
+processing 43Thermostat.txt.groovy
+summary
+cmd overpriv:0
+attr overpriv:0
+num reflection:0
+total:0
+type2 overprivilege total:0
+samename_flags:0
+type2 cmd/attr uses:0
+numSendSms: 0
+numOAuth: 0
+numInternet: 0
+--app-start--
+processing 43Thermostat.txt.groovy
+summary
+cmd overpriv:0
+attr overpriv:0
+num reflection:0
+total:0
+type2 overprivilege total:0
+samename_flags:0
+type2 cmd/attr uses:0
+numSendSms: 0
+numOAuth: 0
+numInternet: 0
+--app-start--
+processing 43Thermostat.txt.groovy
+summary
+cmd overpriv:0
+attr overpriv:0
+num reflection:0
+total:0
+type2 overprivilege total:0
+samename_flags:0
+type2 cmd/attr uses:0
+numSendSms: 0
+numOAuth: 0
+numInternet: 0
+--app-start--
+processing 43Thermostat.txt.groovy
+summary
+cmd overpriv:0
+attr overpriv:0
+num reflection:0
+total:0
+type2 overprivilege total:0
+samename_flags:0
+type2 cmd/attr uses:0
+numSendSms: 0
+numOAuth: 0
+numInternet: 0
+--app-start--
+processing 43Thermostat.txt.groovy
+summary
+cmd overpriv:0
+attr overpriv:0
+num reflection:0
+total:0
+type2 overprivilege total:0
+samename_flags:0
+type2 cmd/attr uses:0
+numSendSms: 0
+numOAuth: 0
+numInternet: 0
+--app-start--
+processing 43Thermostat.txt.groovy
+summary
+cmd overpriv:0
+attr overpriv:0
+num reflection:0
+total:0
+type2 overprivilege total:0
+samename_flags:0
+type2 cmd/attr uses:0
+numSendSms: 0
+numOAuth: 0
+numInternet: 0
+--app-start--
+processing 43Thermostat.txt.groovy
+--app-start--
+processing 43Thermostat.txt.groovy
+summary
+cmd overpriv:0
+attr overpriv:0
+num reflection:0
+total:0
+type2 overprivilege total:0
+samename_flags:0
+type2 cmd/attr uses:0
+numSendSms: 0
+numOAuth: 0
+numInternet: 0
+--app-start--
+processing 43Thermostat.txt.groovy
+summary
+cmd overpriv:0
+attr overpriv:0
+num reflection:0
+total:0
+type2 overprivilege total:0
+samename_flags:0
+type2 cmd/attr uses:0
+numSendSms: 0
+numOAuth: 0
+numInternet: 0
+--app-start--
+processing 43Thermostat.txt.groovy
+summary
+cmd overpriv:0
+attr overpriv:0
+num reflection:0
+total:0
+type2 overprivilege total:0
+samename_flags:0
+type2 cmd/attr uses:0
+numSendSms: 0
+numOAuth: 0
+numInternet: 0
+--app-start--
+processing 43Thermostat.txt.groovy
+--app-start--
+processing 43Thermostat.txt.groovy
+--app-start--
+processing 43Thermostat.txt.groovy
+summary
+cmd overpriv:0
+attr overpriv:0
+num reflection:0
+total:0
+type2 overprivilege total:0
+samename_flags:0
+type2 cmd/attr uses:0
+numSendSms: 0
+numOAuth: 0
+numInternet: 0
+--app-start--
+processing 43Thermostat.txt.groovy
+summary
+cmd overpriv:0
+attr overpriv:0
+num reflection:0
+total:0
+type2 overprivilege total:0
+samename_flags:0
+type2 cmd/attr uses:0
+numSendSms: 0
+numOAuth: 0
+numInternet: 0
+--app-start--
+processing 43Thermostat.txt.groovy
+summary
+cmd overpriv:0
+attr overpriv:0
+num reflection:0
+total:0
+type2 overprivilege total:0
+samename_flags:0
+type2 cmd/attr uses:0
+numSendSms: 0
+numOAuth: 0
+numInternet: 0
+--app-start--
+processing 43Thermostat.txt.groovy
+summary
+cmd overpriv:0
+attr overpriv:0
+num reflection:0
+total:0
+type2 overprivilege total:0
+samename_flags:0
+type2 cmd/attr uses:0
+numSendSms: 0
+numOAuth: 0
+numInternet: 0
+--app-start--
+processing 43Thermostat.txt.groovy
+summary
+cmd overpriv:0
+attr overpriv:0
+num reflection:0
+total:0
+type2 overprivilege total:0
+samename_flags:0
+type2 cmd/attr uses:0
+numSendSms: 0
+numOAuth: 0
+numInternet: 0
+--app-start--
+processing 43Thermostat.txt.groovy
+summary
+cmd overpriv:0
+attr overpriv:0
+num reflection:0
+total:0
+type2 overprivilege total:0
+samename_flags:0
+type2 cmd/attr uses:0
+numSendSms: 0
+numOAuth: 0
+numInternet: 0
+--app-start--
+processing 43Thermostat.txt.groovy
+summary
+cmd overpriv:0
+attr overpriv:0
+num reflection:0
+total:0
+type2 overprivilege total:0
+samename_flags:0
+type2 cmd/attr uses:0
+numSendSms: 0
+numOAuth: 0
+numInternet: 0
+--app-start--
+processing 43Thermostat.txt.groovy
+summary
+cmd overpriv:0
+attr overpriv:0
+num reflection:0
+total:0
+type2 overprivilege total:0
+samename_flags:0
+type2 cmd/attr uses:0
+numSendSms: 0
+numOAuth: 0
+numInternet: 0
+--app-start--
+processing 43Thermostat.txt.groovy
+summary
+cmd overpriv:0
+attr overpriv:0
+num reflection:0
+total:0
+type2 overprivilege total:0
+samename_flags:0
+type2 cmd/attr uses:0
+numSendSms: 0
+numOAuth: 0
+numInternet: 0
+--app-start--
+processing 43Thermostat.txt.groovy
+summary
+cmd overpriv:0
+attr overpriv:0
+num reflection:0
+total:0
+type2 overprivilege total:0
+samename_flags:0
+type2 cmd/attr uses:0
+numSendSms: 0
+numOAuth: 0
+numInternet: 0
+--app-start--
+processing 43Thermostat.txt.groovy
+summary
+cmd overpriv:0
+attr overpriv:0
+num reflection:0
+total:0
+type2 overprivilege total:0
+samename_flags:0
+type2 cmd/attr uses:0
+numSendSms: 0
+numOAuth: 0
+numInternet: 0
+--app-start--
+processing 43Thermostat.txt.groovy
+summary
+cmd overpriv:0
+attr overpriv:0
+num reflection:0
+total:0
+type2 overprivilege total:0
+samename_flags:0
+type2 cmd/attr uses:0
+numSendSms: 0
+numOAuth: 0
+numInternet: 0
+--app-start--
+processing 43Thermostat.txt.groovy
+summary
+cmd overpriv:0
+attr overpriv:0
+num reflection:0
+total:0
+type2 overprivilege total:0
+samename_flags:0
+type2 cmd/attr uses:0
+numSendSms: 0
+numOAuth: 0
+numInternet: 0
+--app-start--
+processing 43Thermostat.txt.groovy
+summary
+cmd overpriv:0
+attr overpriv:0
+num reflection:0
+total:0
+type2 overprivilege total:0
+samename_flags:0
+type2 cmd/attr uses:0
+numSendSms: 0
+numOAuth: 0
+numInternet: 0
+--app-start--
+processing 43Thermostat.txt.groovy
+summary
+cmd overpriv:0
+attr overpriv:0
+num reflection:0
+total:0
+type2 overprivilege total:0
+samename_flags:0
+type2 cmd/attr uses:0
+numSendSms: 0
+numOAuth: 0
+numInternet: 0
+--app-start--
+processing 43Thermostat.txt.groovy
+summary
+cmd overpriv:0
+attr overpriv:0
+num reflection:0
+total:0
+type2 overprivilege total:0
+samename_flags:0
+type2 cmd/attr uses:0
+numSendSms: 0
+numOAuth: 0
+numInternet: 0
+--app-start--
+processing 43Thermostat.txt.groovy
+summary
+cmd overpriv:0
+attr overpriv:0
+num reflection:0
+total:0
+type2 overprivilege total:0
+samename_flags:0
+type2 cmd/attr uses:0
+numSendSms: 0
+numOAuth: 0
+numInternet: 0
+--app-start--
+processing 43Thermostat.txt.groovy
+summary
+cmd overpriv:0
+attr overpriv:0
+num reflection:0
+total:0
+type2 overprivilege total:0
+samename_flags:0
+type2 cmd/attr uses:0
+numSendSms: 0
+numOAuth: 0
+numInternet: 0
+--app-start--
+processing 43Thermostat.txt.groovy
+summary
+cmd overpriv:0
+attr overpriv:0
+num reflection:0
+total:0
+type2 overprivilege total:0
+samename_flags:0
+type2 cmd/attr uses:0
+numSendSms: 0
+numOAuth: 0
+numInternet: 0
+--app-start--
+processing 43Thermostat.txt.groovy
+summary
+cmd overpriv:0
+attr overpriv:0
+num reflection:0
+total:0
+type2 overprivilege total:0
+samename_flags:0
+type2 cmd/attr uses:0
+numSendSms: 0
+numOAuth: 0
+numInternet: 0
+--app-start--
+processing 43Thermostat.txt.groovy
+summary
+cmd overpriv:0
+attr overpriv:0
+num reflection:0
+total:0
+type2 overprivilege total:0
+samename_flags:0
+type2 cmd/attr uses:0
+numSendSms: 0
+numOAuth: 0
+numInternet: 0
+--app-start--
+processing 43Thermostat.txt.groovy
+summary
+cmd overpriv:0
+attr overpriv:0
+num reflection:0
+total:0
+type2 overprivilege total:0
+samename_flags:0
+type2 cmd/attr uses:0
+numSendSms: 0
+numOAuth: 0
+numInternet: 0
+--app-start--
+processing 43Thermostat.txt.groovy
+summary
+cmd overpriv:0
+attr overpriv:0
+num reflection:0
+total:0
+type2 overprivilege total:0
+samename_flags:0
+type2 cmd/attr uses:0
+numSendSms: 0
+numOAuth: 0
+numInternet: 0
+--app-start--
+processing 43Thermostat.txt.groovy
+--app-start--
+processing 43Thermostat.txt.groovy
+summary
+cmd overpriv:0
+attr overpriv:0
+num reflection:0
+total:0
+type2 overprivilege total:0
+samename_flags:0
+type2 cmd/attr uses:0
+numSendSms: 0
+numOAuth: 0
+numInternet: 0
+--app-start--
+processing 43Thermostat.txt.groovy
+summary
+cmd overpriv:0
+attr overpriv:0
+num reflection:0
+total:0
+type2 overprivilege total:0
+samename_flags:0
+type2 cmd/attr uses:0
+numSendSms: 0
+numOAuth: 0
+numInternet: 0
+--app-start--
+processing 43Thermostat.txt.groovy
+summary
+cmd overpriv:0
+attr overpriv:0
+num reflection:0
+total:0
+type2 overprivilege total:0
+samename_flags:0
+type2 cmd/attr uses:0
+numSendSms: 0
+numOAuth: 0
+numInternet: 0
+--app-start--
+processing 43Thermostat.txt.groovy
+summary
+cmd overpriv:0
+attr overpriv:0
+num reflection:0
+total:0
+type2 overprivilege total:0
+samename_flags:0
+type2 cmd/attr uses:0
+numSendSms: 0
+numOAuth: 0
+numInternet: 0
+--app-start--
+processing 43Thermostat.txt.groovy
+summary
+cmd overpriv:0
+attr overpriv:0
+num reflection:0
+total:0
+type2 overprivilege total:0
+samename_flags:0
+type2 cmd/attr uses:0
+numSendSms: 0
+numOAuth: 0
+numInternet: 0
+--app-start--
+processing 43Thermostat.txt.groovy
+summary
+cmd overpriv:0
+attr overpriv:0
+num reflection:0
+total:0
+type2 overprivilege total:0
+samename_flags:0
+type2 cmd/attr uses:0
+numSendSms: 0
+numOAuth: 0
+numInternet: 0
+--app-start--
+processing 43Thermostat.txt.groovy
+--app-start--
+processing 43Thermostat.txt.groovy
+summary
+cmd overpriv:0
+attr overpriv:0
+num reflection:0
+total:0
+type2 overprivilege total:0
+samename_flags:0
+type2 cmd/attr uses:0
+numSendSms: 0
+numOAuth: 0
+numInternet: 0
+--app-start--
+processing 43Thermostat.txt.groovy
+summary
+cmd overpriv:0
+attr overpriv:0
+num reflection:0
+total:0
+type2 overprivilege total:0
+samename_flags:0
+type2 cmd/attr uses:0
+numSendSms: 0
+numOAuth: 0
+numInternet: 0
+--app-start--
+processing test.groovy
+summary
+cmd overpriv:0
+attr overpriv:0
+num reflection:0
+total:0
+type2 overprivilege total:0
+samename_flags:0
+type2 cmd/attr uses:0
+numSendSms: 0
+numOAuth: 0
+numInternet: 0
+--app-start--
+processing test.groovy
+summary
+cmd overpriv:0
+attr overpriv:0
+num reflection:0
+total:0
+type2 overprivilege total:0
+samename_flags:0
+type2 cmd/attr uses:0
+numSendSms: 0
+numOAuth: 0
+numInternet: 0
+--app-start--
+processing test.groovy
+--app-start--
+processing test.groovy
+--app-start--
+processing test.groovy
+--app-start--
+processing test.groovy
+summary
+cmd overpriv:0
+attr overpriv:0
+num reflection:0
+total:0
+type2 overprivilege total:0
+samename_flags:0
+type2 cmd/attr uses:0
+numSendSms: 0
+numOAuth: 0
+numInternet: 0
