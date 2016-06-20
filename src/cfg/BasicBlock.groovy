@@ -27,6 +27,7 @@ class BasicBlock {
     public void addPredecessor(BasicBlock bb){
         predecessors.add(bb)
     }
+
     public List<BasicBlock> getSuccessors(){
         return  successors
     }
