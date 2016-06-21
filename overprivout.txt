@@ -4158,3 +4158,672 @@ type2 cmd/attr uses:0
 numSendSms: 0
 numOAuth: 0
 numInternet: 0
+--app-start--
+processing AlexaAccess.txt.groovy
+summary
+cmd overpriv:0
+attr overpriv:0
+num reflection:0
+total:0
+type2 overprivilege total:0
+samename_flags:0
+type2 cmd/attr uses:0
+numSendSms: 0
+numOAuth: 0
+numInternet: 0
+--app-start--
+processing AlexaAccess.txt.groovy
+--app-start--
+processing AlexaAccess.txt.groovy
+--app-start--
+processing AlexaAccess.txt.groovy
+--app-start--
+processing AlexaAccess.txt.groovy
+--app-start--
+processing AlexaAccess.txt.groovy
+summary
+cmd overpriv:0
+attr overpriv:0
+num reflection:0
+total:0
+type2 overprivilege total:0
+samename_flags:0
+type2 cmd/attr uses:0
+numSendSms: 0
+numOAuth: 0
+numInternet: 0
+--app-start--
+processing test.groovy
+summary
+cmd overpriv:0
+attr overpriv:0
+num reflection:0
+total:0
+type2 overprivilege total:0
+samename_flags:0
+type2 cmd/attr uses:0
+numSendSms: 0
+numOAuth: 0
+numInternet: 0
+--app-start--
+processing test.groovy
+summary
+cmd overpriv:0
+attr overpriv:0
+num reflection:0
+total:0
+type2 overprivilege total:0
+samename_flags:0
+type2 cmd/attr uses:0
+numSendSms: 0
+numOAuth: 0
+numInternet: 0
+--app-start--
+processing test.groovy
+summary
+cmd overpriv:0
+attr overpriv:0
+num reflection:0
+total:0
+type2 overprivilege total:0
+samename_flags:0
+type2 cmd/attr uses:0
+numSendSms: 0
+numOAuth: 0
+numInternet: 0
+--app-start--
+processing test.groovy
+summary
+cmd overpriv:0
+attr overpriv:0
+num reflection:0
+total:0
+type2 overprivilege total:0
+samename_flags:0
+type2 cmd/attr uses:0
+numSendSms: 0
+numOAuth: 0
+numInternet: 0
+--app-start--
+processing test.groovy
+summary
+cmd overpriv:0
+attr overpriv:0
+num reflection:0
+total:0
+type2 overprivilege total:0
+samename_flags:0
+type2 cmd/attr uses:0
+numSendSms: 0
+numOAuth: 0
+numInternet: 0
+--app-start--
+processing test.groovy
+summary
+cmd overpriv:0
+attr overpriv:0
+num reflection:0
+total:0
+type2 overprivilege total:0
+samename_flags:0
+type2 cmd/attr uses:0
+numSendSms: 0
+numOAuth: 0
+numInternet: 0
+--app-start--
+processing test.groovy
+summary
+cmd overpriv:0
+attr overpriv:0
+num reflection:0
+total:0
+type2 overprivilege total:0
+samename_flags:0
+type2 cmd/attr uses:0
+numSendSms: 0
+numOAuth: 0
+numInternet: 0
+--app-start--
+processing test.groovy
+summary
+cmd overpriv:0
+attr overpriv:0
+num reflection:0
+total:0
+type2 overprivilege total:0
+samename_flags:0
+type2 cmd/attr uses:0
+numSendSms: 0
+numOAuth: 0
+numInternet: 0
+--app-start--
+processing test.groovy
+summary
+cmd overpriv:0
+attr overpriv:0
+num reflection:0
+total:0
+type2 overprivilege total:0
+samename_flags:0
+type2 cmd/attr uses:0
+numSendSms: 0
+numOAuth: 0
+numInternet: 0
+--app-start--
+processing test.groovy
+summary
+cmd overpriv:0
+attr overpriv:0
+num reflection:0
+total:0
+type2 overprivilege total:0
+samename_flags:0
+type2 cmd/attr uses:0
+numSendSms: 0
+numOAuth: 0
+numInternet: 0
+--app-start--
+processing test.groovy
+summary
+cmd overpriv:0
+attr overpriv:0
+num reflection:0
+total:0
+type2 overprivilege total:0
+samename_flags:0
+type2 cmd/attr uses:0
+numSendSms: 0
+numOAuth: 0
+numInternet: 0
+--app-start--
+processing test.groovy
+summary
+cmd overpriv:0
+attr overpriv:0
+num reflection:0
+total:0
+type2 overprivilege total:0
+samename_flags:0
+type2 cmd/attr uses:0
+numSendSms: 0
+numOAuth: 0
+numInternet: 0
+--app-start--
+processing test.groovy
+summary
+cmd overpriv:0
+attr overpriv:0
+num reflection:0
+total:0
+type2 overprivilege total:0
+samename_flags:0
+type2 cmd/attr uses:0
+numSendSms: 0
+numOAuth: 0
+numInternet: 0
+--app-start--
+processing test.groovy
+summary
+cmd overpriv:0
+attr overpriv:0
+num reflection:0
+total:0
+type2 overprivilege total:0
+samename_flags:0
+type2 cmd/attr uses:0
+numSendSms: 0
+numOAuth: 0
+numInternet: 0
+--app-start--
+processing AlexaAccess.txt.groovy
+summary
+cmd overpriv:0
+attr overpriv:0
+num reflection:0
+total:0
+type2 overprivilege total:0
+samename_flags:0
+type2 cmd/attr uses:0
+numSendSms: 0
+numOAuth: 0
+numInternet: 0
+--app-start--
+processing AlexaAccess.txt.groovy
+summary
+cmd overpriv:0
+attr overpriv:0
+num reflection:0
+total:0
+type2 overprivilege total:0
+samename_flags:0
+type2 cmd/attr uses:0
+numSendSms: 0
+numOAuth: 0
+numInternet: 0
+--app-start--
+processing AlexaAccess.txt.groovy
+summary
+cmd overpriv:0
+attr overpriv:0
+num reflection:0
+total:0
+type2 overprivilege total:0
+samename_flags:0
+type2 cmd/attr uses:0
+numSendSms: 0
+numOAuth: 0
+numInternet: 0
+--app-start--
+processing AlexaAccess.txt.groovy
+summary
+cmd overpriv:0
+attr overpriv:0
+num reflection:0
+total:0
+type2 overprivilege total:0
+samename_flags:0
+type2 cmd/attr uses:0
+numSendSms: 0
+numOAuth: 0
+numInternet: 0
+--app-start--
+processing AlexaAccess.txt.groovy
+summary
+cmd overpriv:0
+attr overpriv:0
+num reflection:0
+total:0
+type2 overprivilege total:0
+samename_flags:0
+type2 cmd/attr uses:0
+numSendSms: 0
+numOAuth: 0
+numInternet: 0
+--app-start--
+processing AlexaAccess.txt.groovy
+summary
+cmd overpriv:0
+attr overpriv:0
+num reflection:0
+total:0
+type2 overprivilege total:0
+samename_flags:0
+type2 cmd/attr uses:0
+numSendSms: 0
+numOAuth: 0
+numInternet: 0
+--app-start--
+processing AlexaAccess.txt.groovy
+summary
+cmd overpriv:0
+attr overpriv:0
+num reflection:0
+total:0
+type2 overprivilege total:0
+samename_flags:0
+type2 cmd/attr uses:0
+numSendSms: 0
+numOAuth: 0
+numInternet: 0
+--app-start--
+processing AlexaAccess.txt.groovy
+summary
+cmd overpriv:0
+attr overpriv:0
+num reflection:0
+total:0
+type2 overprivilege total:0
+samename_flags:0
+type2 cmd/attr uses:0
+numSendSms: 0
+numOAuth: 0
+numInternet: 0
+--app-start--
+processing AlexaAccess.txt.groovy
+summary
+cmd overpriv:0
+attr overpriv:0
+num reflection:0
+total:0
+type2 overprivilege total:0
+samename_flags:0
+type2 cmd/attr uses:0
+numSendSms: 0
+numOAuth: 0
+numInternet: 0
+--app-start--
+processing AlexaAccess.txt.groovy
+summary
+cmd overpriv:0
+attr overpriv:0
+num reflection:0
+total:0
+type2 overprivilege total:0
+samename_flags:0
+type2 cmd/attr uses:0
+numSendSms: 0
+numOAuth: 0
+numInternet: 0
+--app-start--
+processing AlexaAccess.txt.groovy
+--app-start--
+processing AlexaAccess.txt.groovy
+summary
+cmd overpriv:0
+attr overpriv:0
+num reflection:0
+total:0
+type2 overprivilege total:0
+samename_flags:0
+type2 cmd/attr uses:0
+numSendSms: 0
+numOAuth: 0
+numInternet: 0
+--app-start--
+processing AlexaAccess.txt.groovy
+summary
+cmd overpriv:0
+attr overpriv:0
+num reflection:0
+total:0
+type2 overprivilege total:0
+samename_flags:0
+type2 cmd/attr uses:0
+numSendSms: 0
+numOAuth: 0
+numInternet: 0
+--app-start--
+processing test.groovy
+summary
+cmd overpriv:0
+attr overpriv:0
+num reflection:0
+total:0
+type2 overprivilege total:0
+samename_flags:0
+type2 cmd/attr uses:0
+numSendSms: 0
+numOAuth: 0
+numInternet: 0
+--app-start--
+processing test.groovy
+summary
+cmd overpriv:0
+attr overpriv:0
+num reflection:0
+total:0
+type2 overprivilege total:0
+samename_flags:0
+type2 cmd/attr uses:0
+numSendSms: 0
+numOAuth: 0
+numInternet: 0
+--app-start--
+processing test.groovy
+summary
+cmd overpriv:0
+attr overpriv:0
+num reflection:0
+total:0
+type2 overprivilege total:0
+samename_flags:0
+type2 cmd/attr uses:0
+numSendSms: 0
+numOAuth: 0
+numInternet: 0
+--app-start--
+processing test.groovy
+summary
+cmd overpriv:0
+attr overpriv:0
+num reflection:0
+total:0
+type2 overprivilege total:0
+samename_flags:0
+type2 cmd/attr uses:0
+numSendSms: 0
+numOAuth: 0
+numInternet: 0
+--app-start--
+processing test.groovy
+summary
+cmd overpriv:0
+attr overpriv:0
+num reflection:0
+total:0
+type2 overprivilege total:0
+samename_flags:0
+type2 cmd/attr uses:0
+numSendSms: 0
+numOAuth: 0
+numInternet: 0
+--app-start--
+processing test.groovy
+summary
+cmd overpriv:0
+attr overpriv:0
+num reflection:0
+total:0
+type2 overprivilege total:0
+samename_flags:0
+type2 cmd/attr uses:0
+numSendSms: 0
+numOAuth: 0
+numInternet: 0
+--app-start--
+processing AlexaAccess.txt.groovy
+summary
+cmd overpriv:0
+attr overpriv:0
+num reflection:0
+total:0
+type2 overprivilege total:0
+samename_flags:0
+type2 cmd/attr uses:0
+numSendSms: 0
+numOAuth: 0
+numInternet: 0
+--app-start--
+processing AlexaAccess.txt.groovy
+summary
+cmd overpriv:0
+attr overpriv:0
+num reflection:0
+total:0
+type2 overprivilege total:0
+samename_flags:0
+type2 cmd/attr uses:0
+numSendSms: 0
+numOAuth: 0
+numInternet: 0
+--app-start--
+processing test.groovy
+summary
+cmd overpriv:0
+attr overpriv:0
+num reflection:0
+total:0
+type2 overprivilege total:0
+samename_flags:0
+type2 cmd/attr uses:0
+numSendSms: 0
+numOAuth: 0
+numInternet: 0
+--app-start--
+processing test.groovy
+summary
+cmd overpriv:0
+attr overpriv:0
+num reflection:0
+total:0
+type2 overprivilege total:0
+samename_flags:0
+type2 cmd/attr uses:0
+numSendSms: 0
+numOAuth: 0
+numInternet: 0
+--app-start--
+processing test.groovy
+summary
+cmd overpriv:0
+attr overpriv:0
+num reflection:0
+total:0
+type2 overprivilege total:0
+samename_flags:0
+type2 cmd/attr uses:0
+numSendSms: 0
+numOAuth: 0
+numInternet: 0
+--app-start--
+processing test.groovy
+summary
+cmd overpriv:0
+attr overpriv:0
+num reflection:0
+total:0
+type2 overprivilege total:0
+samename_flags:0
+type2 cmd/attr uses:0
+numSendSms: 0
+numOAuth: 0
+numInternet: 0
+--app-start--
+processing test.groovy
+summary
+cmd overpriv:0
+attr overpriv:0
+num reflection:0
+total:0
+type2 overprivilege total:0
+samename_flags:0
+type2 cmd/attr uses:0
+numSendSms: 0
+numOAuth: 0
+numInternet: 0
+--app-start--
+processing test.groovy
+summary
+cmd overpriv:0
+attr overpriv:0
+num reflection:0
+total:0
+type2 overprivilege total:0
+samename_flags:0
+type2 cmd/attr uses:0
+numSendSms: 0
+numOAuth: 0
+numInternet: 0
+--app-start--
+processing test.groovy
+summary
+cmd overpriv:0
+attr overpriv:0
+num reflection:0
+total:0
+type2 overprivilege total:0
+samename_flags:0
+type2 cmd/attr uses:0
+numSendSms: 0
+numOAuth: 0
+numInternet: 0
+--app-start--
+processing AlexaAccess.txt.groovy
+summary
+cmd overpriv:0
+attr overpriv:0
+num reflection:0
+total:0
+type2 overprivilege total:0
+samename_flags:0
+type2 cmd/attr uses:0
+numSendSms: 0
+numOAuth: 0
+numInternet: 0
+--app-start--
+processing AlexaAccess.txt.groovy
+summary
+cmd overpriv:0
+attr overpriv:0
+num reflection:0
+total:0
+type2 overprivilege total:0
+samename_flags:0
+type2 cmd/attr uses:0
+numSendSms: 0
+numOAuth: 0
+numInternet: 0
+--app-start--
+processing AlexaAccess.txt.groovy
+summary
+cmd overpriv:0
+attr overpriv:0
+num reflection:0
+total:0
+type2 overprivilege total:0
+samename_flags:0
+type2 cmd/attr uses:0
+numSendSms: 0
+numOAuth: 0
+numInternet: 0
+--app-start--
+processing BattaryAttack.groovy
+--app-start--
+processing BattaryAttack.groovy
+--app-start--
+processing BattaryAttack.groovy
+--app-start--
+processing BattaryAttack.groovy
+--app-start--
+processing BattaryAttack.groovy
+--app-start--
+processing BattaryAttack.groovy
+--app-start--
+processing BattaryAttack.groovy
+--app-start--
+processing BattaryAttack.groovy
+--app-start--
+processing BattaryAttack.groovy
+--app-start--
+processing BattaryAttack.groovy
+--app-start--
+processing BattaryAttack.groovy
+--app-start--
+processing BattaryAttack.groovy
+summary
+cmd overpriv:0
+attr overpriv:0
+num reflection:0
+total:0
+type2 overprivilege total:0
+samename_flags:0
+type2 cmd/attr uses:0
+numSendSms: 0
+numOAuth: 0
+numInternet: 0
+--app-start--
+processing AlexaAccess.txt.groovy
+summary
+cmd overpriv:0
+attr overpriv:0
+num reflection:0
+total:0
+type2 overprivilege total:0
+samename_flags:0
+type2 cmd/attr uses:0
+numSendSms: 0
+numOAuth: 0
+numInternet: 0
+--app-start--
+processing test.groovy
+summary
+cmd overpriv:0
+attr overpriv:0
+num reflection:0
+total:0
+type2 overprivilege total:0
+samename_flags:0
+type2 cmd/attr uses:0
+numSendSms: 0
+numOAuth: 0
+numInternet: 0

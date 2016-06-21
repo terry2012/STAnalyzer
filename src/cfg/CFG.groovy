@@ -2,6 +2,7 @@ package cfg
 
 import Utils.Helper
 import org.codehaus.groovy.ast.expr.ConstantExpression
+import org.codehaus.groovy.ast.expr.MapExpression
 import org.codehaus.groovy.ast.expr.MethodCallExpression
 import org.codehaus.groovy.ast.expr.VariableExpression
 import org.codehaus.groovy.ast.stmt.BlockStatement
@@ -31,7 +32,18 @@ public class CFG {
         MethodCallExpressions = new ArrayList<CFGNode>()
         SwithCaseStatements = new ArrayList<CFGNode>()
         init()
+
+        visitPrinter()
+        println '--------------------------------------------'
         sinkPrinter()
+        println '--------------------------------------------'
+        def sinks = getSinks()
+        sinks.each {
+            sink->
+                printTriggers(sink)
+                println '******'
+        }
+
 
     }
     private void init(){
@@ -58,6 +70,28 @@ public class CFG {
                 else if (node.getStatementType()=='SwitchStatement' || node.getStatementType()=='CaseStatement'){
                     //handleSwitchCase(node)
                 }
+                else if (node.getExpressionType()=='MapExpression'){
+                    handleRestAPI(node)
+                }
+                else{
+                }
+        }
+    }
+    private void handleRestAPI(CFGNode apinode){
+        MapExpression exp = apinode.getStatement().asType(ExpressionStatement).getExpression()
+        exp.getMapEntryExpressions().each {
+            entry->
+                String key = entry.keyExpression.text
+                if(key=='GET' || key=='POST'){
+                    String value = entry.getValueExpression().text
+                    cfg.each {
+                        node->
+                            if(node.getParent().get(0)==value) {
+                                Tuple tuple = new Tuple(apinode.getId(), 'RESTAPI', key, value)
+                                node.addPredecessor(tuple)
+                            }
+                    }
+                }
         }
     }
     private void handleIf(CFGNode ifnode){
@@ -67,30 +101,29 @@ public class CFG {
         if(ifstmt.getIfBlock().getClass()!=EmptyStatement){
             ifstmt.getIfBlock().asType(BlockStatement).statements.each {
                 CFGNode node = getNodeByLineNumber(it.getLineNumber())
-                def tuple = new Tuple(if_id,'IfStatement','IfBlock')
+                def tuple = new Tuple(if_id,'IfStatement','IfBlock',ifstmt.getBooleanExpression().getText())
                 node.addPredecessor(tuple)
-                node.joinPredecessors(predecessors)
+                node.clearIndirectPredecessors()
             }
         }
         if(ifstmt.getElseBlock().getClass()==IfStatement){
             IfStatement nestedIf = ifstmt.getElseBlock().asType(IfStatement)
             CFGNode node = getNodeByLineNumber(nestedIf.getLineNumber())
-            def tuple = new Tuple(if_id,'IfStatement','ElseBlock')
+            def tuple = new Tuple(if_id,'IfStatement','ElseBlock',ifstmt.getBooleanExpression().getText())
             node.addPredecessor(tuple)
-            node.joinPredecessors(predecessors)
+            node.clearIndirectPredecessors()
         }
         else if(ifstmt.getElseBlock().getClass()!=EmptyStatement && ifstmt.getElseBlock().getClass()!=IfStatement){
             ifstmt.getElseBlock().asType(BlockStatement).statements.each {
                 CFGNode node = getNodeByLineNumber(it.getLineNumber())
-                def tuple = new Tuple(if_id,'IfStatement','ElseBlock')
+                def tuple = new Tuple(if_id,'IfStatement','ElseBlock',ifstmt.getBooleanExpression().getText())
                 node.addPredecessor(tuple)
-                node.joinPredecessors(predecessors)
+                node.clearIndirectPredecessors()
             }
         }
     }
     private void handleSubscribe(CFGNode methodCallNode){
         MethodCallExpression exp = methodCallNode.getStatement().asType(ExpressionStatement).getExpression().asType(MethodCallExpression)
-        def predecessors = methodCallNode.getPredecessors()
         methodCallNode.setTag('subscribe')
         methodCallNode.setMetaData(exp.getText())
         String triggerName
@@ -107,12 +140,12 @@ public class CFG {
             def handler = exp.getArguments().getAt(2)
             handlerName = handler.getText()
         }
+        Tuple tuple1 = new Tuple(handlerName,1)
         cfg.each {
             node->
-                if(node.getParent()==handlerName){
-                    def tuple = new Tuple(methodCallNode.getId(),'Subscribe',triggerName)
+                if(node.getParent()==tuple1){
+                    def tuple = new Tuple(methodCallNode.getId(),'Subscribe',triggerName,exp.getText())
                     node.addPredecessor(tuple)
-                    node.joinPredecessors(predecessors)
                 }
         }
     }
@@ -128,8 +161,9 @@ public class CFG {
         Tuple<String,Integer> tuple = new Tuple(exp.getMethodAsString(),argcount)
         cfg.each {
             node->
+                // node.getParent()+' '+tuple
                 if(node.getParent()==tuple){
-                    def tup = new Tuple(methodCallNode.getId(),'MethodCall',exp.getMethodAsString())
+                    def tup = new Tuple(methodCallNode.getId(),'MethodCall',exp.getMethodAsString(),exp.getText())
                     node.addPredecessor(tup)
                 }
         }
@@ -146,9 +180,8 @@ public class CFG {
         cfg.each {
             node->
                 if(node.getParent()==handlerName){
-                    def tuple = new Tuple(methodCallNode.getId(),'Schedule',triggerName)
+                    def tuple = new Tuple(methodCallNode.getId(),'Schedule',triggerName,exp.getText())
                     node.addPredecessor(tuple)
-                    node.joinPredecessors(predecessors)
                 }
         }
     }
@@ -192,13 +225,39 @@ public class CFG {
         }
         result
     }
+    public void printTriggers(Integer id){
+        CFGNode node = getNodeById(id)
+        Tuple tuple = new Tuple(node.getId(),'sink', node.getLineNumber().toString(),node.getMetaData())
+        if(node!=null){
+            node.getPredecessors().each {
+                it->
+                    def q = [] as Queue
+                    q.add(tuple)
+                    q.add(it)
+                    processTriggers(it.get(0),q)
+            }
+        }
+    }
+    private void processTriggers(Integer id, Queue queue){
+        CFGNode node = getNodeById(id)
+        if(node!=null && node.getPredecessors().size()>0){
+            node.getPredecessors().each{
+                def q = queue.clone()
+                q.add(it)
+                processTriggers(it.get(0),q)
+            }
+        }
+        else{
+            println queue
+        }
+    }
     public void visitPrinter(){
         cfg.each {
             node->
-                println node.getLineNumber()+'\t'+node.getStatementType()+'\t'+node.getId()+'\t'+node.getTag()+'\t'+node.getMetaData()+'\t'+node.getParent()+'\t'+node.getPredecessors().sort()
+                println node.getLineNumber()+'\t'+node.getStatementType()+'\t'+node.getId()+'\t'+node.getTag()+'\t'+node.getParent()+'\t'+node.getPredecessors().sort()
         }
     }
-    public void getSinks(){
+    public List<Integer> getSinks(){
         List<Integer> result = new ArrayList<Integer>()
         cfg.each {
             node->

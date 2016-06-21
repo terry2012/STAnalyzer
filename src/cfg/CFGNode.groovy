@@ -24,7 +24,7 @@ public class CFGNode {
         if (statement.getClass()==ExpressionStatement) {
             expType = statement.asType(ExpressionStatement).getExpression().getClass().getSimpleName()
         }
-        predecessors = new HashSet<Tuple<Integer,String,String>>()
+        predecessors = new HashSet<Tuple<Integer,String,String,String>>()
     }
     public void setId (Integer the_id){
         id = the_id
@@ -76,5 +76,11 @@ public class CFGNode {
     }
     public void joinPredecessors(Set<Tuple> preds){
         predecessors.addAll(preds)
+    }
+    public void clearIndirectPredecessors(){
+        predecessors.removeAll {
+            it->
+                it.get(1)!='IfStatement'
+        }
     }
 }

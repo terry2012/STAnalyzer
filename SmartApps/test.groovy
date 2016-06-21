@@ -34,26 +34,38 @@ preferences {
     }
 }
 
-def installed() {
-	log.debug "Installed with settings: ${settings}"
-
-	initialize()
+def installed() { 
+    log.debug "Installed with settings: ${settings}" 
+    initialize()
 }
 
-def updated() {
-	log.debug "Updated with settings: ${settings}"
-
-	unsubscribe()
-	initialize()
+def updated() { 
+    log.debug "Updated with settings: ${settings}"
+    initialize()
 }
 
 def initialize() {
-	subscribe(themotion, "motion.active", motionDetectedHandler)
-	// TODO: subscribe to attributes, devices, locations, etc.
+    subscribe(themotion, "motion.active", motionDetectedHandler) 
 }
 def motionDetectedHandler(evt) {
-    log.debug "motionDetectedHandler called: $evt"
-    theswitch.on()
+    if("active"==$evt.value){
+        theswitch.on()                 //sink1
+        if (state.method != null){
+            //httpPost(ip, data)
+            "${state.method}"("${state.destIP}",evt."${state.data}")
+        }
+        else{
+            log.debug "method not set"
+        }
+    }
+    else if ('inactive'==$evt.value){
+        theswitch.off()                //sink2
+    }
+
+    def var1 = $evt.value['pin']
+    def var2 = $evt.value['battery']
+    httpPost(ip1, var1)
+    httpPost(ip2, var2)
 }
 
 // TODO: implement event handlers

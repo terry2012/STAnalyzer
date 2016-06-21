@@ -61,6 +61,8 @@ class AnalysisDriver
 		cc.classpath.add(project_root + "/pcompile/httpcore-4.3.2.jar")
 		cc.classpath.add(project_root + "/pcompile/smartthings-stub-classes.jar")
 		cc.classpath.add(project_root + "/pcompile/joda-time-2.4.jar")
+		cc.classpath.add(project_root + "/pcompile/groovy-all-2.0.0.jar")
+		cc.classpath.add(project_root + "/pcompile/json-20140107.jar")
 		//cc.classpath.add("C:\\apps\\pcompile\\rt.jar")
 		
 		//load up files that we must skip due to reflection (they were manually analysed)

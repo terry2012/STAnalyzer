@@ -54,7 +54,6 @@ public class STAnalysisAST extends CompilationCustomizer{
         allCommandsList = new ArrayList()
         allPropsList = new ArrayList()
         allCapsList = new ArrayList()
-
         nodes = new ArrayList<CFGNode>()
     }
     @Override
