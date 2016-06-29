@@ -34,48 +34,30 @@ preferences {
     }
 }
 
-def installed() { //@MethodStmt: EntryPoint #1
-    log.debug "Installed with settings: ${settings}" 
-    initialize()
+def installed() { 
+    log.debug "Installed with settings: ${settings}"
+    if(1==2){
+        initialize()
+    }
 }
 
-def updated() { //@MethodStmt: EntryPoint #2
+def updated() { 
     log.debug "Updated with settings: ${settings}"
-    unsubscribe()
     initialize()
 }
 
 def initialize() {
-    subscribe(themotion, "motion.active", motionDetectedHandler)  //@Stmt #1: EntryPoint #1
+	state.data = 'a'
+    subscribe(themotion, "motion.active", motionDetectedHandler) 
 }
-def motionDetectedHandler(evt) {  //@Stmt #2: predecessor: Stmt #1
-    log.debug "motionDetectedHandler called" 
+def motionDetectedHandler(evt) {
     if("active"==$evt.value){
-        log.debug "hello"
-        theswitch.on()
-        if (1==2){
-            log.debug "wrong"
-        }
-        else{
-            log.debug "fuck"
-        }
-    }
-    else if ('inactive'==$evt.value){
-        theswitch.off()
-    }
-    else{
-        log.debug "hehe"
-    }
-    switch($evt.value){
-        case 'active':
-            theswitch.on()
-            break
-        case 'inactive':
-            theswitch.off()
-            break
-        default:
-            log.debug "default"
-    }
+        theswitch.on()     
+    }            //sink1
+        /*if (state.method != null){
+            //httpPost(ip, data)
+            "${state.method}"("${state.destIP}",evt."${state.data}")
+        }*/
 }
 
 // TODO: implement event handlers

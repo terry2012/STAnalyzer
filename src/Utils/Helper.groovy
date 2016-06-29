@@ -101,7 +101,6 @@ class Helper {
                 mixins { }
             }
         }.first()
-
     }
     public static void labelMethod(MethodNode node){
         if (node.getCode().class == BlockStatement) {
@@ -111,5 +110,10 @@ class Helper {
                     Helper.setStatementParentMethod(stmt,node.getName())
             }
         }
+    }
+    public static String getUniqueKeyUsingUUID() {
+        // Static factory to retrieve a type 4 (pseudo randomly generated) UUID
+        String UUID = UUID.randomUUID().toString();
+        return UUID;
     }
 }

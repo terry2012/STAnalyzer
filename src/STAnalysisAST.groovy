@@ -3,11 +3,15 @@
  */
 
 
+import Utils.Builder
 import Utils.Helper
 import Utils.InitVisitor
-import Utils.PrintLabelVisitor
 import cfg.CFG
+import cfg.ICFG
+import cfg.ICFGNode
 import cfg.CFGNode
+import groovy.json.JsonBuilder
+import groovy.json.JsonSlurper
 import org.codehaus.groovy.ast.ClassCodeVisitorSupport
 import org.codehaus.groovy.ast.ClassNode
 import org.codehaus.groovy.ast.MethodNode
@@ -44,8 +48,12 @@ public class STAnalysisAST extends CompilationCustomizer{
     List allPropsList
     List allCapsList
 
-    List<CFGNode> nodes
-    CFG cfg
+    List<ICFGNode> nodes
+    ICFG cfg
+    String appId
+    String appName
+    String description
+    String category
     public STAnalysisAST(Logger logger){
         super(CompilePhase.SEMANTIC_ANALYSIS)
         log = logger
@@ -54,53 +62,51 @@ public class STAnalysisAST extends CompilationCustomizer{
         allCommandsList = new ArrayList()
         allPropsList = new ArrayList()
         allCapsList = new ArrayList()
-        nodes = new ArrayList<CFGNode>()
+        nodes = new ArrayList<ICFGNode>()
     }
     @Override
     void call(SourceUnit source, GeneratorContext context, ClassNode classNode) {
-        /*source.getAST().getMethods().each {
-            it ->
-                it.getCode().asType(BlockStatement).getStatements().each {
-                    n-> println n.getLineNumber()
-                }
-                //def statement = it.get
-                //print statement.getLineNumber()+"\n"
-        }*/
+        //classNode.addMethod(Builder.buildMethodCall('jackMethod','arg1','arg2'))
+//        source.getAST().getMethods().each {
+//            it ->
+//                if(it.getName() == 'installed'){
+//                    List existingStatements = it.getCode().getStatements()
+//                    existingStatements.add(Builder.buildAssignmentStatement('data','haha'))
+//                }
+//                //def statement = it.get
+//                //print statement.getLineNumber()+"\n"
+//        }
 
-        MethodCodeVisitor mcv = new MethodCodeVisitor()
-        PrintLabelVisitor plv = new PrintLabelVisitor()
+        ConstructVisitor cv = new ConstructVisitor()
         InitVisitor inv = new InitVisitor(allCommandsList)
-        //classNode.visitContents(inv)
-        classNode.visitContents(mcv)
-        cfg = new CFG(nodes)
+        classNode.visitContents(cv)
+        classNode.visitContents(inv)
+        cfg = new ICFG(nodes)
+        AnnotationVisitor anv = new AnnotationVisitor(cfg)
+        classNode.visitContents(anv)
+
+        Patch(source,classNode)
+        Helper.getSourceFromNode(classNode)
     }
-    class MethodCodeVisitor extends ClassCodeVisitorSupport{
+    private void Patch(SourceUnit source,ClassNode classNode){
+        appId = Helper.getUniqueKeyUsingUUID()
+        classNode.getMethods().each {
+            method->
+                if(method.getName() == 'installed'){
+                    List existingStatements = method.getCode().getStatements()
+                    existingStatements.add(Builder.buildAssignment2State('appId',appId))
+                    existingStatements.add(Builder.buildAssignmentList2State('actionQueue',[]))
+                }
+        }
+    }
+    class ConstructVisitor extends ClassCodeVisitorSupport{
         public ArrayList<String> globals
         public ArrayList<DeclarationExpression> dexpressions
         public ArrayList<BinaryExpression> bexpressions
         private Tuple currentMethod
         //private Tuple<String,List<String>> currentMethod
-        public MethodCodeVisitor() {
-            globals = new ArrayList<String>()
-            dexpressions = new ArrayList<DeclarationExpression>()
-            bexpressions = new ArrayList<BinaryExpression>()
+        public ConstructVisitor() {
         }
-        /*
-        @Override
-        void visitMethodCallExpression(MethodCallExpression mce){
-            def mceText
-            if (mce.getMethodAsString() == null){
-                mceText = mce.getText()
-                print "Dynamic:" + mceText+"\n"
-            }
-            else{
-                mceText = mce.getMethodAsString()
-                def name = mce.methodAsString
-                def parameters = mce?.arguments
-                //print "Static:" + name+" "+parameters?.text+"\n"
-            }
-            super.visitMethodCallExpression(mce)
-        }*/
         @Override
         protected SourceUnit getSourceUnit() {
             return null;
@@ -108,12 +114,16 @@ public class STAnalysisAST extends CompilationCustomizer{
         @Override
         void  visitMethod(MethodNode node){
             currentMethod = new Tuple(node.name,node.getParameters().size())
+            if(node.getName()=='definition'){
+                BlockStatement block = node.getCode()
+                println block.getStatements().size()
+            }
             super.visitMethod(node)
         }
         @Override
         void visitStatement(Statement statement) {
             if (statement.getClass() != BlockStatement && statement.getLineNumber()>0) {
-                CFGNode node = new CFGNode(statement)
+                ICFGNode node = new ICFGNode(statement)
                 node.setParent(currentMethod)
                 if(node.getExpressionType()=='MethodCallExpression'){
                     MethodCallExpression exp = node.getStatement().asType(ExpressionStatement).getExpression().asType(MethodCallExpression)
@@ -123,6 +133,31 @@ public class STAnalysisAST extends CompilationCustomizer{
                     }
                 }
                 nodes.add(node)
+            }
+        }
+    }
+    class AnnotationVisitor extends ClassCodeVisitorSupport{
+        public ICFG icfg
+        public AnnotationVisitor(ICFG cfg) {
+            icfg = cfg
+        }
+        @Override
+        protected SourceUnit getSourceUnit() {
+            return null;
+        }
+        @Override
+        void visitStatement(Statement statement){
+            if(statement.getClass() != BlockStatement && statement.getLineNumber()>0){
+                def jsonBuilder = new JsonBuilder()
+                ICFGNode node = icfg.getNodeByLineNumber(statement.getLineNumber())
+                def node_id = node?.getId()
+                def node_data = node?.getMetaData()
+                def node_parent = node?.getParent()
+                def node_predecessor = node.getPredecessors()?.size()>0? node.getPredecessors().first():null
+                def map = ['id':node_id,'metadata':node_data,'parent':node_parent,'predecessor':node_predecessor]
+                jsonBuilder(map)
+                def annotation = jsonBuilder.toString()
+                statement.setStatementLabel(annotation)
             }
         }
     }
