@@ -30,7 +30,7 @@ class ICFG {
         init()
 
         //visitPrinter()
-        //println '--------------------------------------------'
+        println '--------------------------------------------'
         sinkPrinter()
         println '--------------------------------------------'
         def sinks = getSinks()

@@ -6,6 +6,7 @@
 import Utils.Builder
 import Utils.Helper
 import Utils.InitVisitor
+import Utils.PatchVisitor
 import cfg.CFG
 import cfg.ICFG
 import cfg.ICFGNode
@@ -16,13 +17,17 @@ import org.codehaus.groovy.ast.ClassCodeVisitorSupport
 import org.codehaus.groovy.ast.ClassNode
 import org.codehaus.groovy.ast.MethodNode
 import org.codehaus.groovy.ast.builder.AstBuilder
+import org.codehaus.groovy.ast.expr.ArgumentListExpression
 import org.codehaus.groovy.ast.expr.ArrayExpression
 import org.codehaus.groovy.ast.expr.BinaryExpression
 import org.codehaus.groovy.ast.expr.BitwiseNegationExpression
 import org.codehaus.groovy.ast.expr.ClassExpression
 import org.codehaus.groovy.ast.expr.DeclarationExpression
+import org.codehaus.groovy.ast.expr.MapEntryExpression
 import org.codehaus.groovy.ast.expr.MapExpression
 import org.codehaus.groovy.ast.expr.MethodCallExpression
+import org.codehaus.groovy.ast.expr.NamedArgumentListExpression
+import org.codehaus.groovy.ast.expr.TupleExpression
 import org.codehaus.groovy.ast.expr.VariableExpression
 import org.codehaus.groovy.ast.stmt.BlockStatement
 import org.codehaus.groovy.classgen.GeneratorContext
@@ -52,8 +57,9 @@ public class STAnalysisAST extends CompilationCustomizer{
     ICFG cfg
     String appId
     String appName
-    String description
-    String category
+    String appDescription
+    String appCategory
+    List<String> validMethods
     public STAnalysisAST(Logger logger){
         super(CompilePhase.SEMANTIC_ANALYSIS)
         log = logger
@@ -62,11 +68,11 @@ public class STAnalysisAST extends CompilationCustomizer{
         allCommandsList = new ArrayList()
         allPropsList = new ArrayList()
         allCapsList = new ArrayList()
+        validMethods = new ArrayList<String>()
         nodes = new ArrayList<ICFGNode>()
     }
     @Override
     void call(SourceUnit source, GeneratorContext context, ClassNode classNode) {
-        //classNode.addMethod(Builder.buildMethodCall('jackMethod','arg1','arg2'))
 //        source.getAST().getMethods().each {
 //            it ->
 //                if(it.getName() == 'installed'){
@@ -86,18 +92,32 @@ public class STAnalysisAST extends CompilationCustomizer{
         classNode.visitContents(anv)
 
         Patch(source,classNode)
+
         Helper.getSourceFromNode(classNode)
     }
     private void Patch(SourceUnit source,ClassNode classNode){
         appId = Helper.getUniqueKeyUsingUUID()
         classNode.getMethods().each {
             method->
+                if(method.getName() == 'run'){
+                    List existingStatements = method.getCode().getStatements()
+                    existingStatements.add(Builder.buildCallbackMappings('onPermissionResponse'))
+                }
                 if(method.getName() == 'installed'){
                     List existingStatements = method.getCode().getStatements()
                     existingStatements.add(Builder.buildAssignment2State('appId',appId))
                     existingStatements.add(Builder.buildAssignmentList2State('actionQueue',[]))
+                    existingStatements.add(Builder.buildAssignment2State('appName',appName))
+                    existingStatements.add(Builder.buildAssignment2State('appDescription',appDescription))
+                    existingStatements.add(Builder.buildAssignment2State('appCategory',appCategory))
+                    /* Add variables to log predecessor for each function*/
+                    validMethods.each {
+                        existingStatements.add(Builder.buildAssignment2State("$it"+"_predecessor",""))
+                    }
                 }
         }
+        PatchVisitor pv = new PatchVisitor(validMethods)
+        classNode.visitContents(pv)
     }
     class ConstructVisitor extends ClassCodeVisitorSupport{
         public ArrayList<String> globals
@@ -114,9 +134,8 @@ public class STAnalysisAST extends CompilationCustomizer{
         @Override
         void  visitMethod(MethodNode node){
             currentMethod = new Tuple(node.name,node.getParameters().size())
-            if(node.getName()=='definition'){
-                BlockStatement block = node.getCode()
-                println block.getStatements().size()
+            if(node.getName() != 'main' && node.getName() != 'run'){
+                validMethods.add(node.getName())
             }
             super.visitMethod(node)
         }
@@ -130,6 +149,46 @@ public class STAnalysisAST extends CompilationCustomizer{
                     if(exp.getMethodAsString()?.toLowerCase() in allCommandsList){
                         node.setTag('sink')
                         node.setMetaData(exp.text)
+                    }
+                    if(exp.getMethodAsString()=='definition'){
+                        switch (exp.getArguments().getType()) {
+                            case ArgumentListExpression:
+                                ArgumentListExpression arglistexp = exp.getArguments()
+                                MapExpression map = arglistexp.first()
+                                List<MapEntryExpression> entrys = map.getMapEntryExpressions()
+                                entrys.each {
+                                    entry->
+                                        def key = entry.getKeyExpression().text
+                                        def value = entry.getValueExpression().text
+                                        if(key.equalsIgnoreCase('name')){
+                                            appName = value
+                                        }
+                                        else if (key.equalsIgnoreCase('description')){
+                                            appDescription = value
+                                        }
+                                        else if (key.equalsIgnoreCase('category')){
+                                            appCategory = value
+                                        }
+                                }
+                                break
+                            default:
+                                TupleExpression tupleExpression = exp.getArguments()
+                                NamedArgumentListExpression namedArgumentListExpression = tupleExpression.first()
+                                namedArgumentListExpression.getMapEntryExpressions().each {
+                                    entry->
+                                        def key = entry.getKeyExpression().text
+                                        def value = entry.getValueExpression().text
+                                        if(key.equalsIgnoreCase('name')){
+                                            appName = value
+                                        }
+                                        else if (key.equalsIgnoreCase('description')){
+                                            appDescription = value
+                                        }
+                                        else if (key.equalsIgnoreCase('category')){
+                                            appCategory = value
+                                        }
+                                }
+                        }
                     }
                 }
                 nodes.add(node)
@@ -151,12 +210,14 @@ public class STAnalysisAST extends CompilationCustomizer{
                 def jsonBuilder = new JsonBuilder()
                 ICFGNode node = icfg.getNodeByLineNumber(statement.getLineNumber())
                 def node_id = node?.getId()
+                def node_tag = node?.getTag()
                 def node_data = node?.getMetaData()
                 def node_parent = node?.getParent()
-                def node_predecessor = node.getPredecessors()?.size()>0? node.getPredecessors().first():null
-                def map = ['id':node_id,'metadata':node_data,'parent':node_parent,'predecessor':node_predecessor]
+                def node_predecessor = node?.getPredecessors()?.size()>0? node.getPredecessors().first():null
+                def map = ['id':node_id,'tag':node_tag,'metadata':node_data,'parent':node_parent,'predecessor':node_predecessor]
                 jsonBuilder(map)
                 def annotation = jsonBuilder.toString()
+                println  node_id+' '+node_tag+' '+annotation.replaceAll("\"","\'")
                 statement.setStatementLabel(annotation)
             }
         }
@@ -178,7 +239,12 @@ public class STAnalysisAST extends CompilationCustomizer{
             def values = v?.split(" ")
             values?.each { allPropsList.add(it.toLowerCase()) }
         }
-
+        List<String> httpSinks = ['httpDelete','httpGet','httpHead','httpPost','httpPostJson','httpPut','httpPutJson',]
+        List<String> notificationSinks = ['sendLocationEvent','sendNotification','sendNotificationEvent','sendNotificationContacts','sendPushMessage','sendSMS','sendSMSMessage']
+        List<String> changeSettingSinks = ['setLocationMode'] //subscribeToCommand()
+        httpSinks.each { allCommandsList.add(it.toLowerCase())}
+        notificationSinks.each{ allCommandsList.add(it.toLowerCase())}
+        changeSettingSinks.each {allCommandsList.add(it.toLowerCase())}
     }
     def createClass(String qualifiedClassNodeName) {
 
@@ -189,8 +255,8 @@ public class STAnalysisAST extends CompilationCustomizer{
                 mixins { }
             }
         }.first()
-
     }
+    def toLower
     /**
      * This method creates an empty class node with the qualified name passed as parameter
      *

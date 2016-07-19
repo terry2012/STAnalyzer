@@ -1,71 +1,64 @@
-/**
- *  Jack Interaction App
- *
- *  Copyright 2016 Yunhan Jia
- *
- *  Licensed under the Apache License, Version 2.0 (the "License"); you may not use this file except
- *  in compliance with the License. You may obtain a copy of the License at:
- *
- *      http://www.apache.org/licenses/LICENSE-2.0
- *
- *  Unless required by applicable law or agreed to in writing, software distributed under the License is distributed
- *  on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License
- *  for the specific language governing permissions and limitations under the License.
- *
- */
 definition(
-    name: "Jack Interaction App",
+    name: "PaperDemo",
     namespace: "jyh0082007",
     author: "Yunhan Jia",
-    description: "An app that tests interaction among things",
+    description: "An app that automatically unlocks door when owner is back.",
     category: "Safety & Security",
     iconUrl: "https://s3.amazonaws.com/smartapp-icons/Convenience/Cat-Convenience.png",
     iconX2Url: "https://s3.amazonaws.com/smartapp-icons/Convenience/Cat-Convenience@2x.png",
-    iconX3Url: "https://s3.amazonaws.com/smartapp-icons/Convenience/Cat-Convenience@2x.png",
-    oauth: true)
+    iconX3Url: "https://s3.amazonaws.com/smartapp-icons/Convenience/Cat-Convenience@2x.png") 
 
 
 preferences {
-    section("Turn on when motion detected:") {
-        input "themotion", "capability.motionSensor", required: true, title: "Where?"
-    }
-    section("Turn on this light") {
-        input "theswitch", "capability.switch", required: true
+    section("Title") {
+        input "lock1","capability.lock",title:"Select a lock"
     }
 }
-
-def installed() { 
-    log.debug "Installed with settings: ${settings}" 
+mappings {
+    path("/command/:cmd"){
+        action:[
+            PUT: "onReceived"
+        ]
+    }
+}
+def installed() {
+    log.info "Installed with settings: ${settings}"
+    //Additional info that the app should maintain 
+    state.actionQueue = []
+    state.appName = "Jack First App"
+    state.appDescription = "My first smart app"
+    state.category = "Safety & Security"
     initialize()
 }
 
-def updated() { 
+def updated() {
     log.debug "Updated with settings: ${settings}"
+    unsubscribe()
     initialize()
 }
 
 def initialize() {
-    subscribe(themotion, "motion.active", motionDetectedHandler) 
+    subscribe(location, "mode", locationHandler)
 }
-def motionDetectedHandler(evt) {
-    if("active"==$evt.value){
-        theswitch.on()                 //sink1
-        if (state.method != null){
-            //httpPost(ip, data)
-            "${state.method}"("${state.destIP}",evt."${state.data}")
-        }
-        else{
-            log.debug "method not set"
-        }
+def locationHandler(evt){
+    def startTime = now()
+    //log.debug "startTime:$startTime"
+    
+    log.debug "location mode = $location.mode"
+    if(location.mode == 'Home'){
+        lock1.unlock()
+        runIn (5,lockDoor())
     }
-    else if ('inactive'==$evt.value){
-        theswitch.off()                //sink2
-    }
-
-    def var1 = $evt.value['pin']
-    def var2 = $evt.value['battery']
-    httpPost(ip1, var1)
-    httpPost(ip2, var2)
+    def endTime = now()
+    //log.debug "endTime:$endTime"
+    log.debug 
 }
-
-// TODO: implement event handlers
+def lockDoor()
+{
+    lock1.lock()
+}
+def onReceived()
+{
+    def command = params.cmd
+    lock1."$command"()
+}

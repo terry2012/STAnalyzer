@@ -38,29 +38,31 @@ public class InitVisitor extends ClassCodeVisitorSupport {
     public void visitStatement(Statement statement){
         println statement.getLineNumber()+' '+ statement.getClass()
         if(statement.getLineNumber()> 0) {
-            Helper.setStatementId(statement, counter++)
             switch (statement.getClass()) {
                 case BlockStatement:
                     break
                 case ExpressionStatement:
                     def exp = statement.asType(ExpressionStatement).getExpression()
-                    println '\t'+statement.getLineNumber()+' '+exp.getClass().toString()
+                    //println '\t'+statement.getLineNumber()+' '+exp.getClass().toString()
                     switch (exp.getClass()) {
                         case MethodCallExpression:
-                            def methodexp = exp.asType(MethodCallExpression)
+                            MethodCallExpression methodexp = exp.asType(MethodCallExpression)
                             def arguments = methodexp.getArguments()
-                            println '\t\t'+methodexp.getMethodAsString()+' '+methodexp.getArguments().getClass().toString()
+                            //println '\t\t'+methodexp.getMethodAsString()+' '+methodexp.getArguments().getClass().toString()
                             switch (arguments.getClass()){
                                 case ArgumentListExpression:
                                     ArgumentListExpression argexp = arguments
-                                    println '\t\t\t'+argexp.getText()
+                                    //println '\t\t\t'+argexp.getText()
                                     break
                                 case TupleExpression:
                                     TupleExpression tulexp = arguments
-                                    println '\t\t\t'+tulexp.getExpressions()
+                                    //println '\t\t\t'+tulexp.getExpressions()
                                     break
                                 default:
                                     break
+                            }
+                            if(methodexp.getMethodAsString()=='mappings'){
+                                println '\t\t\t'+methodexp.toString()
                             }
                             break
                         case BinaryExpression:
@@ -80,9 +82,6 @@ public class InitVisitor extends ClassCodeVisitorSupport {
         println statement.getLineNumber()+' '+ statement.getExpression().getClass()+' '+ statement.getExpression().getProperties()
         //super.visitExpressionStatement(statement)
     }*/
-    public Integer get123(){
-        return 123
-    }
     @Override
     protected SourceUnit getSourceUnit() {
         return null;

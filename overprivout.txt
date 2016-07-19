@@ -5952,3 +5952,687 @@ type2 cmd/attr uses:0
 numSendSms: 0
 numOAuth: 0
 numInternet: 0
+--app-start--
+processing jack.groovy
+--app-start--
+processing jack.groovy
+summary
+cmd overpriv:0
+attr overpriv:0
+num reflection:0
+total:0
+type2 overprivilege total:0
+samename_flags:0
+type2 cmd/attr uses:0
+numSendSms: 0
+numOAuth: 0
+numInternet: 0
+--app-start--
+processing jack.groovy
+summary
+cmd overpriv:0
+attr overpriv:0
+num reflection:0
+total:0
+type2 overprivilege total:0
+samename_flags:0
+type2 cmd/attr uses:0
+numSendSms: 0
+numOAuth: 0
+numInternet: 0
+--app-start--
+processing jack.groovy
+summary
+cmd overpriv:0
+attr overpriv:0
+num reflection:0
+total:0
+type2 overprivilege total:0
+samename_flags:0
+type2 cmd/attr uses:0
+numSendSms: 0
+numOAuth: 0
+numInternet: 0
+--app-start--
+processing jack.groovy
+summary
+cmd overpriv:0
+attr overpriv:0
+num reflection:0
+total:0
+type2 overprivilege total:0
+samename_flags:0
+type2 cmd/attr uses:0
+numSendSms: 0
+numOAuth: 0
+numInternet: 0
+--app-start--
+processing jack.groovy
+summary
+cmd overpriv:0
+attr overpriv:0
+num reflection:0
+total:0
+type2 overprivilege total:0
+samename_flags:0
+type2 cmd/attr uses:0
+numSendSms: 0
+numOAuth: 0
+numInternet: 0
+--app-start--
+processing jack.groovy
+summary
+cmd overpriv:0
+attr overpriv:0
+num reflection:0
+total:0
+type2 overprivilege total:0
+samename_flags:0
+type2 cmd/attr uses:0
+numSendSms: 0
+numOAuth: 0
+numInternet: 0
+--app-start--
+processing jack.groovy
+summary
+cmd overpriv:0
+attr overpriv:0
+num reflection:0
+total:0
+type2 overprivilege total:0
+samename_flags:0
+type2 cmd/attr uses:0
+numSendSms: 0
+numOAuth: 0
+numInternet: 0
+--app-start--
+processing jack.groovy
+summary
+cmd overpriv:0
+attr overpriv:0
+num reflection:0
+total:0
+type2 overprivilege total:0
+samename_flags:0
+type2 cmd/attr uses:0
+numSendSms: 0
+numOAuth: 0
+numInternet: 0
+--app-start--
+processing jack.groovy
+--app-start--
+processing jack.groovy
+--app-start--
+processing jack.groovy
+summary
+cmd overpriv:0
+attr overpriv:0
+num reflection:0
+total:0
+type2 overprivilege total:0
+samename_flags:0
+type2 cmd/attr uses:0
+numSendSms: 0
+numOAuth: 0
+numInternet: 0
+--app-start--
+processing jack.groovy
+summary
+cmd overpriv:0
+attr overpriv:0
+num reflection:0
+total:0
+type2 overprivilege total:0
+samename_flags:0
+type2 cmd/attr uses:0
+numSendSms: 0
+numOAuth: 0
+numInternet: 0
+--app-start--
+processing jack.groovy
+summary
+cmd overpriv:0
+attr overpriv:0
+num reflection:0
+total:0
+type2 overprivilege total:0
+samename_flags:0
+type2 cmd/attr uses:0
+numSendSms: 0
+numOAuth: 0
+numInternet: 0
+--app-start--
+processing jack.groovy
+summary
+cmd overpriv:0
+attr overpriv:0
+num reflection:0
+total:0
+type2 overprivilege total:0
+samename_flags:0
+type2 cmd/attr uses:0
+numSendSms: 0
+numOAuth: 0
+numInternet: 0
+--app-start--
+processing jack.groovy
+summary
+cmd overpriv:0
+attr overpriv:0
+num reflection:0
+total:0
+type2 overprivilege total:0
+samename_flags:0
+type2 cmd/attr uses:0
+numSendSms: 0
+numOAuth: 0
+numInternet: 0
+--app-start--
+processing jack.groovy
+--app-start--
+processing jack.groovy
+--app-start--
+processing jack.groovy
+summary
+cmd overpriv:0
+attr overpriv:0
+num reflection:0
+total:0
+type2 overprivilege total:0
+samename_flags:0
+type2 cmd/attr uses:0
+numSendSms: 0
+numOAuth: 0
+numInternet: 0
+--app-start--
+processing jack.groovy
+--app-start--
+processing jack.groovy
+summary
+cmd overpriv:0
+attr overpriv:0
+num reflection:0
+total:0
+type2 overprivilege total:0
+samename_flags:0
+type2 cmd/attr uses:0
+numSendSms: 0
+numOAuth: 0
+numInternet: 0
+--app-start--
+processing jack.groovy
+--app-start--
+processing jack.groovy
+--app-start--
+processing jack.groovy
+--app-start--
+processing jack.groovy
+--app-start--
+processing jack.groovy
+--app-start--
+processing jack.groovy
+--app-start--
+processing jack.groovy
+--app-start--
+processing jack.groovy
+--app-start--
+processing jack.groovy
+--app-start--
+processing jack.groovy
+--app-start--
+processing jack.groovy
+--app-start--
+processing jack.groovy
+--app-start--
+processing jack.groovy
+--app-start--
+processing jack.groovy
+--app-start--
+processing jack.groovy
+--app-start--
+processing jack.groovy
+--app-start--
+processing jack.groovy
+--app-start--
+processing jack.groovy
+--app-start--
+processing jack.groovy
+summary
+cmd overpriv:0
+attr overpriv:0
+num reflection:0
+total:0
+type2 overprivilege total:0
+samename_flags:0
+type2 cmd/attr uses:0
+numSendSms: 0
+numOAuth: 0
+numInternet: 0
+--app-start--
+processing jack.groovy
+--app-start--
+processing jack.groovy
+--app-start--
+processing jack.groovy
+--app-start--
+processing jack.groovy
+--app-start--
+processing jack.groovy
+--app-start--
+processing jack.groovy
+summary
+cmd overpriv:0
+attr overpriv:0
+num reflection:0
+total:0
+type2 overprivilege total:0
+samename_flags:0
+type2 cmd/attr uses:0
+numSendSms: 0
+numOAuth: 0
+numInternet: 0
+--app-start--
+processing jack.groovy
+--app-start--
+processing jack.groovy
+summary
+cmd overpriv:0
+attr overpriv:0
+num reflection:0
+total:0
+type2 overprivilege total:0
+samename_flags:0
+type2 cmd/attr uses:0
+numSendSms: 0
+numOAuth: 0
+numInternet: 0
+--app-start--
+processing jack.groovy
+--app-start--
+processing jack.groovy
+summary
+cmd overpriv:0
+attr overpriv:0
+num reflection:0
+total:0
+type2 overprivilege total:0
+samename_flags:0
+type2 cmd/attr uses:0
+numSendSms: 0
+numOAuth: 0
+numInternet: 0
+--app-start--
+processing jack.groovy
+summary
+cmd overpriv:0
+attr overpriv:0
+num reflection:0
+total:0
+type2 overprivilege total:0
+samename_flags:0
+type2 cmd/attr uses:0
+numSendSms: 0
+numOAuth: 0
+numInternet: 0
+--app-start--
+processing jack.groovy
+--app-start--
+processing jack.groovy
+--app-start--
+processing jack.groovy
+--app-start--
+processing jack.groovy
+--app-start--
+processing jack.groovy
+--app-start--
+processing jack.groovy
+--app-start--
+processing jack.groovy
+--app-start--
+processing jack.groovy
+summary
+cmd overpriv:0
+attr overpriv:0
+num reflection:0
+total:0
+type2 overprivilege total:0
+samename_flags:0
+type2 cmd/attr uses:0
+numSendSms: 0
+numOAuth: 0
+numInternet: 0
+--app-start--
+processing jack.groovy
+summary
+cmd overpriv:0
+attr overpriv:0
+num reflection:0
+total:0
+type2 overprivilege total:0
+samename_flags:0
+type2 cmd/attr uses:0
+numSendSms: 0
+numOAuth: 0
+numInternet: 0
+--app-start--
+processing jack.groovy
+--app-start--
+processing jack.groovy
+--app-start--
+processing jack.groovy
+summary
+cmd overpriv:0
+attr overpriv:0
+num reflection:0
+total:0
+type2 overprivilege total:0
+samename_flags:0
+type2 cmd/attr uses:0
+numSendSms: 0
+numOAuth: 0
+numInternet: 0
+--app-start--
+processing jack.groovy
+summary
+cmd overpriv:0
+attr overpriv:0
+num reflection:0
+total:0
+type2 overprivilege total:0
+samename_flags:0
+type2 cmd/attr uses:0
+numSendSms: 0
+numOAuth: 0
+numInternet: 0
+--app-start--
+processing jack.groovy
+summary
+cmd overpriv:0
+attr overpriv:0
+num reflection:0
+total:0
+type2 overprivilege total:0
+samename_flags:0
+type2 cmd/attr uses:0
+numSendSms: 0
+numOAuth: 0
+numInternet: 0
+--app-start--
+processing jack.groovy
+--app-start--
+processing jack.groovy
+--app-start--
+processing jack.groovy
+--app-start--
+processing jack.groovy
+summary
+cmd overpriv:0
+attr overpriv:0
+num reflection:0
+total:0
+type2 overprivilege total:0
+samename_flags:0
+type2 cmd/attr uses:0
+numSendSms: 0
+numOAuth: 0
+numInternet: 0
+--app-start--
+processing jack.groovy
+--app-start--
+processing jack.groovy
+--app-start--
+processing jack.groovy
+summary
+cmd overpriv:0
+attr overpriv:0
+num reflection:0
+total:0
+type2 overprivilege total:0
+samename_flags:0
+type2 cmd/attr uses:0
+numSendSms: 0
+numOAuth: 0
+numInternet: 0
+--app-start--
+processing jack.groovy
+--app-start--
+processing jack.groovy
+--app-start--
+processing jack.groovy
+--app-start--
+processing jack.groovy
+--app-start--
+processing jack.groovy
+--app-start--
+processing jack.groovy
+--app-start--
+processing jack.groovy
+--app-start--
+processing jack.groovy
+--app-start--
+processing jack.groovy
+--app-start--
+processing jack.groovy
+--app-start--
+processing jack.groovy
+--app-start--
+processing jack.groovy
+--app-start--
+processing jack.groovy
+--app-start--
+processing jack.groovy
+summary
+cmd overpriv:0
+attr overpriv:0
+num reflection:0
+total:0
+type2 overprivilege total:0
+samename_flags:0
+type2 cmd/attr uses:0
+numSendSms: 0
+numOAuth: 0
+numInternet: 0
+--app-start--
+processing jack.groovy
+--app-start--
+processing jack.groovy
+--app-start--
+processing jack.groovy
+--app-start--
+processing jack.groovy
+--app-start--
+processing jack.groovy
+--app-start--
+processing jack.groovy
+--app-start--
+processing jack.groovy
+--app-start--
+processing jack.groovy
+--app-start--
+processing jack.groovy
+--app-start--
+processing jack.groovy
+--app-start--
+processing jack.groovy
+--app-start--
+processing jack.groovy
+--app-start--
+processing jack.groovy
+--app-start--
+processing jack.groovy
+--app-start--
+processing jack.groovy
+--app-start--
+processing jack.groovy
+--app-start--
+processing jack.groovy
+--app-start--
+processing jack.groovy
+--app-start--
+processing jack.groovy
+--app-start--
+processing jack.groovy
+--app-start--
+processing jack.groovy
+--app-start--
+processing jack.groovy
+--app-start--
+processing jack.groovy
+--app-start--
+processing jack.groovy
+--app-start--
+processing jack.groovy
+--app-start--
+processing jack.groovy
+--app-start--
+processing jack.groovy
+--app-start--
+processing jack.groovy
+--app-start--
+processing jack.groovy
+--app-start--
+processing jack.groovy
+--app-start--
+processing jack.groovy
+--app-start--
+processing jack.groovy
+--app-start--
+processing jack.groovy
+--app-start--
+processing jack.groovy
+--app-start--
+processing jack.groovy
+--app-start--
+processing jack.groovy
+--app-start--
+processing jack.groovy
+--app-start--
+processing jack.groovy
+--app-start--
+processing jack.groovy
+--app-start--
+processing jack.groovy
+--app-start--
+processing jack.groovy
+--app-start--
+processing jack.groovy
+--app-start--
+processing jack.groovy
+--app-start--
+processing jack.groovy
+--app-start--
+processing jack.groovy
+--app-start--
+processing test.groovy
+--app-start--
+processing jack.groovy
+--app-start--
+processing jack.groovy
+--app-start--
+processing jack.groovy
+--app-start--
+processing jack.groovy
+--app-start--
+processing jack.groovy
+--app-start--
+processing jack.groovy
+--app-start--
+processing jack.groovy
+--app-start--
+processing jack.groovy
+--app-start--
+processing jack.groovy
+--app-start--
+processing jack.groovy
+--app-start--
+processing jack.groovy
+--app-start--
+processing jack.groovy
+--app-start--
+processing jack.groovy
+--app-start--
+processing jack.groovy
+--app-start--
+processing jack.groovy
+--app-start--
+processing jack.groovy
+--app-start--
+processing jack.groovy
+--app-start--
+processing jack.groovy
+--app-start--
+processing jack.groovy
+--app-start--
+processing jack.groovy
+--app-start--
+processing jack.groovy
+--app-start--
+processing jack.groovy
+--app-start--
+processing jack.groovy
+--app-start--
+processing jack.groovy
+--app-start--
+processing jack.groovy
+--app-start--
+processing jack.groovy
+--app-start--
+processing jack.groovy
+--app-start--
+processing jack.groovy
+--app-start--
+processing jack.groovy
+--app-start--
+processing jack.groovy
+--app-start--
+processing jack.groovy
+--app-start--
+processing jack.groovy
+--app-start--
+processing jack.groovy
+--app-start--
+processing test.groovy
+--app-start--
+processing test.groovy
+--app-start--
+processing test.groovy
+--app-start--
+processing test.groovy
+--app-start--
+processing test.groovy
+--app-start--
+processing test.groovy
+--app-start--
+processing test.groovy
+--app-start--
+processing test.groovy
+--app-start--
+processing test.groovy
+--app-start--
+processing test.groovy
+--app-start--
+processing test.groovy
+--app-start--
+processing test.groovy
+--app-start--
+processing test.groovy
+--app-start--
+processing test.groovy
+--app-start--
+processing test.groovy
+--app-start--
+processing test.groovy
+--app-start--
+processing test.groovy
+--app-start--
+processing test.groovy
+--app-start--
+processing test.groovy
+--app-start--
+processing test.groovy
+--app-start--
+processing test.groovy
+--app-start--
+processing test.groovy
+--app-start--
+processing test.groovy

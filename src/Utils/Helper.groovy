@@ -116,4 +116,15 @@ class Helper {
         String UUID = UUID.randomUUID().toString();
         return UUID;
     }
+    public static Object getLabelField(String labels, String field){
+        try{
+            def jsonSlurper = new JsonSlurper()
+            Map label = jsonSlurper.parseText(labels)
+            label.getAt(field)
+        }
+        catch (e){
+            return null
+        }
+
+    }
 }

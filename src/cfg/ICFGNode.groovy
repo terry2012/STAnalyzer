@@ -44,9 +44,6 @@ public class ICFGNode {
     public String getTag(){
         tag
     }
-    /*public Integer getPredecessor(){
-        predecessor
-    }*/
     public Tuple getParent(){
         parent
     }
